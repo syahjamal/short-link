@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 function Navbar(props) {
     return (
         <>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <Link class="navbar-brand" to="/">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="container-fluid">
+                    <Link className="navbar-brand" to="/">
                         <img
                             src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/qr_code-256.png"
                             width="30"
@@ -17,7 +17,7 @@ function Navbar(props) {
                         />
                     </Link>
                     <button 
-                        class="navbar-toggler" 
+                        className="navbar-toggler" 
                         type="button" 
                         data-bs-toggle="collapse" 
                         data-bs-target="#navbarNav" 
@@ -25,18 +25,18 @@ function Navbar(props) {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <Link class="nav-link active" aria-current="page" to="/">
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to="/">
                                     Home 
-                                    {/* <span className="sr-only">(current)</span> */}
+                                    {/* <span classNameName="sr-only">(current)</span> */}
                                 </Link>
                             </li>
-                            <li class="nav-item">
-                                <Link class="nav-link" to="/history">History</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/history">History</Link>
                             </li>
                         </ul>
                     </div>
