@@ -3,12 +3,14 @@ import Container from '../components/Container';
 import Col from '../components/Col';
 import Card from '../components/Card';
 import Row from '../components/Row';
+import Loading from '../components/Loading';
 
 import "./Home.css";
 
 function Home(props) {
     return (
         <>
+        <Loading/>
             <Container className="mt-5">
                 <Row>
                     <Col className="col-md-6 offset-md-3">
