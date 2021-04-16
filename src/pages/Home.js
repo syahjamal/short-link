@@ -11,23 +11,27 @@ function Home(props) {
         <>
             <Container className="mt-5">
                 <Row>
-                    <Col className="col-md-5 offset-3">
-                        <Card>
+                    <Col className="col-md-6 offset-md-3">
+                        <Card className="card">
                             <div className="text-center">
                                 <img
                                     src="https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/qr_code-256.png"
                                     width="140"
                                     alt="logo" 
                                 />
+                                <br/>
+                                <small>
+                                    QR Code and URL Shortener Generator
+                                </small>
                             </div>
-                            <fom>
-                                <div className="form-group">
-                                    <input type="text" className="form-control"/>
+                            <form className="mt-2">
+                                <div className="form-group" >
+                                    <input type="text" className="form-control search__input"/>
                                 </div>
-                                <div className="form-group mt-3">
-                                    <button className="btn btn-primary btn-lg w-100">Generate</button>
+                                <div className="form-group" style={{padding: '24px 48px 24px 48px'}}>
+                                    <button type="button" className="btn btn-primary w-100">Generate</button>
                                 </div>
-                            </fom>
+                            </form>
                         </Card>
                     </Col>
                 </Row>
